@@ -1,0 +1,48 @@
+{
+  "name": "coordsbot-reborn",
+  "version": "1.0.0",
+  "description": "Discord bot to facilitate player and planet traking on ogame like games",
+  "main": "src/app.js",
+  "scripts": {
+		"lint": "eslint src",
+		"lint:fix": "eslint src --fix",
+    "pre-run": "npm run lint && mkdir -p logs",
+		"dev": "nodemon src/app.js",
+		"start": "pm2 start ./src/app.js --no-daemon",
+		"monit": "pm2 monit",
+		"kill": "pm2 kill"
+  },
+  "author": "Andres Avellaneda @Caerisse",
+  "license": "MIT",
+  "dependencies": {
+    "pm2": "^5.1.2",
+    "discord.js": "^13.7.0",
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.27.2",
+    "giphy-random": "^2.0.8",
+		"dotenv": "^10.0.0",
+    "request": "^2.88.2",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7",
+    "jimp": "^0.16.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"nodemon": "^2.0.15",
+		"prettier": "^2.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caerisse/CoordsBotReborn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Caerisse/CoordsBotReborn/issues"
+  },
+  "homepage": "https://github.com/Caerisse/CoordsBotReborn#readme"
+}

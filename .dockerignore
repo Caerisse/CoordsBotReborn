@@ -1,0 +1,9 @@
+cnode_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+.vscode
+logs
+dockerupload.ps1

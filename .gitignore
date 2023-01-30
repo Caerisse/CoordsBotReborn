@@ -1,0 +1,12 @@
+node_modules/
+build/
+logs/
+.env
+.env.develop
+.env.production
+**.log
+package-lock.json
+.vscode/
+public/
+temp/
+dockerupload.ps1
